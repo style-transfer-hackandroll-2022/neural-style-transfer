@@ -61,12 +61,14 @@ placeholder = st.container()
 
 with col1:
     st.markdown("## Content Image")
+    st.markdown("[Example Content Image](https://upload.wikimedia.org/wikipedia/commons/d/d7/Green_Sea_Turtle_grazing_seagrass.jpg)")
     image_file = st.file_uploader("Upload Content Image", type=["png", "jpg", "jpeg"])
     if(image_file):
         st.image(image_file, width=200)
 
 with col2:
     st.markdown("## Style Image")
+    st.markdown("[Example Style Image](https://upload.wikimedia.org/wikipedia/commons/thumb/e/ea/Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg/1024px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg)")
     style_file = st.file_uploader("Upload Style Image", type=["png", "jpg", "jpeg"])
     if(style_file):
         st.image(style_file, width=200)
